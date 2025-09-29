@@ -59,12 +59,12 @@ export default function Contact() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Get In Touch
             </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-white max-w-3xl mx-auto">
               I'm always interested in new opportunities and exciting projects. Let's connect!
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 lg:items-start">
             {/* Contact Information */}
             <div className="space-y-8">
               <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
@@ -74,14 +74,14 @@ export default function Contact() {
                 <CardContent className="space-y-6">
                   {contactInfo.map((info, index) => (
                     <div key={index} className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <info.icon className="w-6 h-6 text-blue-600" />
+                      <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{backgroundColor: '#420084'}}>
+                        <info.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <p className="font-semibold text-white">{info.label}</p>
                         <a 
                           href={info.href}
-                          className="text-blue-400 hover:text-blue-300 transition-colors"
+                          className="transition-colors text-white"
                         >
                           {info.value}
                         </a>
@@ -104,7 +104,7 @@ export default function Contact() {
                         variant="outline"
                         size="lg"
                         asChild
-                        className={`${social.color} transition-colors`}
+                        className="transition-colors text-black"
                       >
                         <a href={social.href} target="_blank" rel="noopener noreferrer">
                           <social.icon className="w-5 h-5 mr-2" />
@@ -117,7 +117,7 @@ export default function Contact() {
               </Card>
 
               {/* Quick Response */}
-              <Card className="bg-blue-50/20 backdrop-blur-md border border-blue-200/30 shadow-xl">
+              <Card className="backdrop-blur-md border border-white/20 shadow-xl" style={{backgroundColor: 'rgba(66, 0, 132, 0.1)'}}>
                 <CardContent className="p-6">
                   <h3 className="font-bold text-white mb-2">Quick Response</h3>
                   <p className="text-white text-xs">
@@ -129,8 +129,8 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div>
-              <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
+            <div className="lg:sticky lg:top-8">
+              <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl h-fit">
                 <CardHeader>
                   <CardTitle className="text-xl text-white">Send a Message</CardTitle>
                 </CardHeader>
@@ -199,7 +199,7 @@ export default function Contact() {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full">
+                    <Button type="submit" size="lg" className="w-full bg-[#420084] hover:bg-[#420084]/90">
                       <Send className="w-4 h-4 mr-2" />
                       Send Message
                     </Button>
@@ -211,7 +211,7 @@ export default function Contact() {
 
           {/* Call to Action */}
           <div className="mt-16 text-center">
-            <Card className="bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-md border border-white/20 shadow-xl text-white">
+            <Card className="backdrop-blur-md border border-white/20 shadow-xl text-white" style={{background: 'linear-gradient(to right, rgba(66, 0, 132, 0.8), rgba(66, 0, 132, 0.6))'}}>
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4">Ready to Start Your Project?</h3>
                 <p className="text-base mb-6 opacity-90">
@@ -224,7 +224,7 @@ export default function Contact() {
                       Send Email
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600" asChild>
+                  <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white" style={{'--hover-color': '#420084'} as React.CSSProperties} asChild>
                     <a href="tel:+15551234567">
                       <Phone className="w-4 h-4 mr-2" />
                       Call Now

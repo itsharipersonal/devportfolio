@@ -57,7 +57,7 @@ export default function Projects() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Featured Projects
             </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-white max-w-3xl mx-auto">
               A showcase of my recent work and side projects
             </p>
           </div>
@@ -96,7 +96,7 @@ export default function Projects() {
                   <p className="text-white mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs text-white">
+                      <Badge key={tech} variant="outline" className="text-xs text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
                         {tech}
                       </Badge>
                     ))}
@@ -121,7 +121,7 @@ export default function Projects() {
                     <p className="text-white mb-4 text-xs">{project.description}</p>
                     <div className="flex flex-wrap gap-1 mb-4">
                       {project.technologies.map((tech) => (
-                        <Badge key={tech} variant="outline" className="text-xs text-white">
+                        <Badge key={tech} variant="outline" className="text-xs text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
                           {tech}
                         </Badge>
                       ))}

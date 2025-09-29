@@ -57,7 +57,7 @@ export default function Experience() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Work Experience
             </h2>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-white max-w-3xl mx-auto">
               My professional journey and key achievements
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function Experience() {
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     {/* Timeline indicator */}
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold" style={{backgroundColor: '#420084'}}>
                         {index + 1}
                       </div>
                     </div>
@@ -81,7 +81,7 @@ export default function Experience() {
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <div>
                           <h3 className="text-lg font-bold text-white">{exp.position}</h3>
-                          <div className="flex items-center gap-2 text-blue-400 font-semibold">
+                          <div className="flex items-center gap-2 font-semibold text-white">
                             <Building className="w-4 h-4" />
                             {exp.company}
                           </div>
@@ -111,7 +111,7 @@ export default function Experience() {
                         <ul className="space-y-1">
                           {exp.achievements.map((achievement, achIndex) => (
                             <li key={achIndex} className="text-xs text-white flex items-start gap-2">
-                              <span className="text-blue-600 mt-1">•</span>
+                              <span className="mt-1 text-white">•</span>
                               {achievement}
                             </li>
                           ))}
@@ -123,7 +123,7 @@ export default function Experience() {
                         <h4 className="font-semibold text-white mb-2">Technologies Used:</h4>
                         <div className="flex flex-wrap gap-2">
                           {exp.technologies.map((tech) => (
-                            <Badge key={tech} variant="secondary" className="text-xs">
+                            <Badge key={tech} variant="secondary" className="text-xs text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
                               {tech}
                             </Badge>
                           ))}
@@ -144,14 +144,14 @@ export default function Experience() {
             <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
               <CardContent className="p-8">
                 <div className="flex items-center gap-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                    <Building className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{backgroundColor: '#420084'}}>
+                    <Building className="w-8 h-8 text-white" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-white">
                       Bachelor of Science in Computer Science
                     </h4>
-                    <p className="text-blue-400 font-semibold">University of Technology</p>
+                    <p className="font-semibold text-white">University of Technology</p>
                     <p className="text-white">2015 - 2019</p>
                     <p className="text-xs text-white mt-1">
                       Graduated Magna Cum Laude with focus on Software Engineering and Data Structures
