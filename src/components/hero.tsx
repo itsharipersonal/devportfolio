@@ -11,7 +11,7 @@ export default function Hero() {
         aria-label="Unicorn.studio interactive background"
       >
         <div 
-          data-us-project="ChZ6zVrLinVNC2HUFIBo" 
+          data-us-project="QsVP26DtfKdoFFb0vfgo" 
           style={{width: "100%", height: "100%"}}
         ></div>
       </div>
@@ -22,20 +22,20 @@ export default function Hero() {
           <div className="max-w-4xl">
             {/* Main Headline - Lower left alignment with generous spacing */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white leading-tight">
-              HARIRKRISHNAN
+              HARI KRISHNAN
               <br />
-              <span className="text-blue-600">A FULL STACK DEV</span>
+              {/* <span className="text-blue-600">A FULL STACK DEV</span> */}
             </h1>
 
             {/* CTA Button */}
-            <div className="mt-8 sm:mt-12">
+            {/* <div className="mt-8 sm:mt-12">
               <Button 
                 size="lg" 
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Try it out
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
