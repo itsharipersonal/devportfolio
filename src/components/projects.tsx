@@ -54,10 +54,10 @@ export default function Projects() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Featured Projects
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               A showcase of my recent work and side projects
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function Projects() {
           {/* Featured Projects */}
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {featuredProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
                 <div className="aspect-video bg-gray-200 relative">
                   <img 
                     src={project.image} 
@@ -90,13 +90,13 @@ export default function Projects() {
                   </div>
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
+                  <CardTitle className="text-lg text-white">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-300 mb-4">{project.description}</p>
+                  <p className="text-white mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs">
+                      <Badge key={tech} variant="outline" className="text-xs text-white">
                         {tech}
                       </Badge>
                     ))}
@@ -108,20 +108,20 @@ export default function Projects() {
 
           {/* Other Projects */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">
+            <h3 className="text-xl font-bold text-white mb-8 text-center">
               Other Projects
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {otherProjects.map((project, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+                <Card key={index} className="hover:shadow-lg transition-shadow duration-300 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
                   <CardHeader>
-                    <CardTitle className="text-lg">{project.title}</CardTitle>
+                    <CardTitle className="text-base text-white">{project.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-300 mb-4 text-sm">{project.description}</p>
+                    <p className="text-white mb-4 text-xs">{project.description}</p>
                     <div className="flex flex-wrap gap-1 mb-4">
                       {project.technologies.map((tech) => (
-                        <Badge key={tech} variant="outline" className="text-xs">
+                        <Badge key={tech} variant="outline" className="text-xs text-white">
                           {tech}
                         </Badge>
                       ))}

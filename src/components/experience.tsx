@@ -54,10 +54,10 @@ export default function Experience() {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Work Experience
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               My professional journey and key achievements
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function Experience() {
           {/* Experience Timeline */}
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card key={index} className="relative overflow-hidden">
+              <Card key={index} className="relative overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
                 <CardContent className="p-8">
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     {/* Timeline indicator */}
@@ -80,13 +80,13 @@ export default function Experience() {
                       {/* Header */}
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                         <div>
-                          <h3 className="text-xl font-bold text-white">{exp.position}</h3>
+                          <h3 className="text-lg font-bold text-white">{exp.position}</h3>
                           <div className="flex items-center gap-2 text-blue-400 font-semibold">
                             <Building className="w-4 h-4" />
                             {exp.company}
                           </div>
                         </div>
-                        <div className="flex flex-col sm:items-end gap-1 text-sm text-gray-300">
+                        <div className="flex flex-col sm:items-end gap-1 text-xs text-white">
                           <div className="flex items-center gap-1">
                             <Calendar className="w-4 h-4" />
                             {exp.duration}
@@ -101,16 +101,16 @@ export default function Experience() {
                       <Separator />
 
                       {/* Description */}
-                      <p className="text-gray-300 leading-relaxed">
+                      <p className="text-white leading-relaxed">
                         {exp.description}
                       </p>
 
                       {/* Achievements */}
                       <div>
-                        <h4 className="font-semibold text-gray-200 mb-2">Key Achievements:</h4>
+                        <h4 className="font-semibold text-white mb-2">Key Achievements:</h4>
                         <ul className="space-y-1">
                           {exp.achievements.map((achievement, achIndex) => (
-                            <li key={achIndex} className="text-sm text-gray-300 flex items-start gap-2">
+                            <li key={achIndex} className="text-xs text-white flex items-start gap-2">
                               <span className="text-blue-600 mt-1">•</span>
                               {achievement}
                             </li>
@@ -120,7 +120,7 @@ export default function Experience() {
 
                       {/* Technologies */}
                       <div>
-                        <h4 className="font-semibold text-gray-200 mb-2">Technologies Used:</h4>
+                        <h4 className="font-semibold text-white mb-2">Technologies Used:</h4>
                         <div className="flex flex-wrap gap-2">
                           {exp.technologies.map((tech) => (
                             <Badge key={tech} variant="secondary" className="text-xs">
@@ -138,22 +138,22 @@ export default function Experience() {
 
           {/* Education Section */}
           <div className="mt-16">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">
+            <h3 className="text-xl font-bold text-white mb-8 text-center">
               Education
             </h3>
-            <Card>
+            <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
               <CardContent className="p-8">
                 <div className="flex items-center gap-6">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
                     <Building className="w-8 h-8 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-white">
+                    <h4 className="text-lg font-bold text-white">
                       Bachelor of Science in Computer Science
                     </h4>
                     <p className="text-blue-400 font-semibold">University of Technology</p>
-                    <p className="text-gray-300">2015 - 2019</p>
-                    <p className="text-sm text-gray-300 mt-1">
+                    <p className="text-white">2015 - 2019</p>
+                    <p className="text-xs text-white mt-1">
                       Graduated Magna Cum Laude with focus on Software Engineering and Data Structures
                     </p>
                   </div>

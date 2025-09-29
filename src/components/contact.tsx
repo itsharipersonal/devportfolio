@@ -56,10 +56,10 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Get In Touch
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               I'm always interested in new opportunities and exciting projects. Let's connect!
             </p>
           </div>
@@ -67,9 +67,9 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
-              <Card>
+              <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white">Contact Information</CardTitle>
+                  <CardTitle className="text-xl text-white">Contact Information</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   {contactInfo.map((info, index) => (
@@ -92,9 +92,9 @@ export default function Contact() {
               </Card>
 
               {/* Social Links */}
-              <Card>
+              <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white">Follow Me</CardTitle>
+                  <CardTitle className="text-xl text-white">Follow Me</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex gap-4">
@@ -117,10 +117,10 @@ export default function Contact() {
               </Card>
 
               {/* Quick Response */}
-              <Card className="bg-blue-50 border-blue-200">
+              <Card className="bg-blue-50/20 backdrop-blur-md border border-blue-200/30 shadow-xl">
                 <CardContent className="p-6">
-                  <h3 className="font-bold text-blue-300 mb-2">Quick Response</h3>
-                  <p className="text-blue-200 text-sm">
+                  <h3 className="font-bold text-white mb-2">Quick Response</h3>
+                  <p className="text-white text-xs">
                     I typically respond to emails within 24 hours. For urgent matters, 
                     feel free to call or text me directly.
                   </p>
@@ -130,15 +130,15 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div>
-              <Card>
+              <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white">Send a Message</CardTitle>
+                  <CardTitle className="text-xl text-white">Send a Message</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="firstName" className="block text-sm font-medium text-gray-300 mb-2">
+                        <label htmlFor="firstName" className="block text-xs font-medium text-white mb-2">
                           First Name
                         </label>
                         <Input
@@ -149,7 +149,7 @@ export default function Contact() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="lastName" className="block text-sm font-medium text-gray-300 mb-2">
+                        <label htmlFor="lastName" className="block text-xs font-medium text-white mb-2">
                           Last Name
                         </label>
                         <Input
@@ -162,7 +162,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                      <label htmlFor="email" className="block text-xs font-medium text-white mb-2">
                         Email
                       </label>
                       <Input
@@ -175,7 +175,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                      <label htmlFor="subject" className="block text-xs font-medium text-white mb-2">
                         Subject
                       </label>
                       <Input
@@ -187,7 +187,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                      <label htmlFor="message" className="block text-xs font-medium text-white mb-2">
                         Message
                       </label>
                       <Textarea
@@ -211,10 +211,10 @@ export default function Contact() {
 
           {/* Call to Action */}
           <div className="mt-16 text-center">
-            <Card className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+            <Card className="bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-md border border-white/20 shadow-xl text-white">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
-                <p className="text-lg mb-6 opacity-90">
+                <h3 className="text-xl font-bold mb-4">Ready to Start Your Project?</h3>
+                <p className="text-base mb-6 opacity-90">
                   Let's discuss how I can help bring your ideas to life
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
