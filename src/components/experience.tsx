@@ -65,8 +65,8 @@ export default function Experience() {
           {/* Experience Timeline */}
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card key={index} className="relative overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
-                <CardContent className="p-8">
+              <Card key={index} className="relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent before:pointer-events-none">
+                <CardContent className="p-8 relative z-10">
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     {/* Timeline indicator */}
                     <div className="flex-shrink-0">
@@ -141,8 +141,8 @@ export default function Experience() {
             <h3 className="text-xl font-bold text-white mb-8 text-center">
               Education
             </h3>
-            <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
-              <CardContent className="p-8">
+            <Card className="bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent before:pointer-events-none">
+              <CardContent className="p-8 relative z-10">
                 <div className="flex items-center gap-6">
                   <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{backgroundColor: '#420084'}}>
                     <Building className="w-8 h-8 text-white" />

@@ -28,8 +28,8 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-8 items-stretch">
             {/* Left Column - Profile */}
             <div className="flex flex-col gap-8 h-full">
-              <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl flex-1">
-                <CardContent className="p-0 h-full flex flex-col">
+              <Card className="p-8 bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl flex-1 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent before:pointer-events-none">
+                <CardContent className="p-0 h-full flex flex-col relative z-10">
                   <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 flex-1">
                     <Avatar className="w-32 h-32 flex-shrink-0">
                       <AvatarImage 
@@ -58,14 +58,14 @@ export default function About() {
 
               {/* Quick Stats */}
               <div className="grid grid-cols-2 gap-4">
-                <Card className="p-6 text-center bg-white/10 backdrop-blur-md border border-white/20 shadow-xl h-24 flex items-center justify-center">
-                  <CardContent className="p-0">
+                <Card className="p-6 text-center bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl h-24 flex items-center justify-center relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/5 before:to-transparent before:pointer-events-none">
+                  <CardContent className="p-0 relative z-10">
                     <div className="text-2xl font-bold mb-1 text-white">5+</div>
                     <div className="text-xs text-white">Years Experience</div>
                   </CardContent>
                 </Card>
-                <Card className="p-6 text-center bg-white/10 backdrop-blur-md border border-white/20 shadow-xl h-24 flex items-center justify-center">
-                  <CardContent className="p-0">
+                <Card className="p-6 text-center bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl h-24 flex items-center justify-center relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/5 before:to-transparent before:pointer-events-none">
+                  <CardContent className="p-0 relative z-10">
                     <div className="text-2xl font-bold mb-1 text-white">50+</div>
                     <div className="text-xs text-white">Projects Completed</div>
                   </CardContent>
@@ -75,8 +75,8 @@ export default function About() {
 
             {/* Right Column - Skills */}
             <div className="flex flex-col">
-              <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl h-full">
-                <CardContent className="p-0 h-full flex flex-col">
+              <Card className="p-8 bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl h-full relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent before:pointer-events-none">
+                <CardContent className="p-0 h-full flex flex-col relative z-10">
                   <h3 className="text-xl font-bold text-white mb-6">
                     Technical Skills
                   </h3>
