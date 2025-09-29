@@ -31,9 +31,13 @@ export default function About() {
               <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20 shadow-xl flex-1">
                 <CardContent className="p-0 h-full flex flex-col">
                   <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 flex-1">
-                    <Avatar className="w-24 h-24 flex-shrink-0">
-                      <AvatarImage src="/api/placeholder/96/96" alt="Hari Krishnan" />
-                      <AvatarFallback className="text-2xl">HK</AvatarFallback>
+                    <Avatar className="w-32 h-32 flex-shrink-0">
+                      <AvatarImage 
+                        src="/profile.png" 
+                        alt="Hari Krishnan" 
+                        className="object-cover scale-110"
+                      />
+                      <AvatarFallback className="text-3xl">HK</AvatarFallback>
                     </Avatar>
                     <div className="text-center sm:text-left flex-1">
                       <h3 className="text-xl font-bold text-white mb-2">
