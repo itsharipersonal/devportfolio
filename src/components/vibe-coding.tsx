@@ -2,7 +2,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
 import { Code, Brain, Coffee, Zap } from "lucide-react";
 
 export default function VibeCoding() {
@@ -51,7 +50,7 @@ export default function VibeCoding() {
               My Take on Vibe Coding
             </h2>
             <p className="text-lg text-white/80 max-w-3xl mx-auto">
-              A developer's perspective on AI-assisted coding and the daily struggle with prompt quality
+              A developer&apos;s perspective on AI-assisted coding and the daily struggle with prompt quality
             </p>
           </header>
 

@@ -397,7 +397,7 @@ export default function Timeline() {
                     My Journey Over The Years
                   </h3>
                   <p className="text-sm text-gray-300 mb-4 leading-relaxed">
-                    My development journey has been quite a way... it's <span className="text-purple-300 font-semibold">BIG</span>! 
+                    My development journey has been quite a way... it&apos;s <span className="text-purple-300 font-semibold">BIG</span>! 
                     <br />
                     Want to see how I went from college projects to AI-powered applications?
                   </p>
@@ -441,7 +441,7 @@ export default function Timeline() {
                     Hope you like it! 😊
                   </h3>
                   <p className="text-sm text-gray-300 mb-4 leading-relaxed">
-                    I know it's not that big, but it's kind of a big journey. There are many projects that were killed by the delete button... <span className="text-purple-300">feel sad now</span> 😢
+                    I know it&apos;s not that big, but it&apos;s kind of a big journey. There are many projects that were killed by the delete button... <span className="text-purple-300">feel sad now</span> 😢
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button
