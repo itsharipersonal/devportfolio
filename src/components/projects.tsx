@@ -85,23 +85,23 @@ export default function Projects() {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-black">
+    <section id="projects" className="py-20 bg-black" aria-labelledby="projects-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+          <header className="text-center mb-8">
+            <h2 id="projects-heading" className="text-2xl sm:text-3xl font-bold text-white mb-2">
               Featured Projects
             </h2>
             <p className="text-base text-white max-w-2xl mx-auto">
               A showcase of my recent work and side projects
             </p>
-          </div>
+          </header>
 
           {/* Featured Projects */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12" role="list" aria-label="Featured projects">
             {featuredProjects.map((project, index) => (
-              <Card key={index} className="group overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-gray-700 hover:border-purple-500/50 shadow-lg hover:shadow-purple-500/20">
+              <Card key={index} className="group overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-gray-700 hover:border-purple-500/50 shadow-lg hover:shadow-purple-500/20" role="listitem">
                 <div className="aspect-square bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
                   <img 
                     src={project.image} 

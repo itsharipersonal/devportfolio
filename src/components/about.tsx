@@ -14,18 +14,18 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-black">
+    <section id="about" className="py-20 bg-black" aria-labelledby="about-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <header className="text-center mb-16">
+            <h2 id="about-heading" className="text-3xl sm:text-4xl font-bold text-white mb-4">
               About Me
             </h2>
             <p className="text-lg text-white max-w-3xl mx-auto">
               Passionate full-stack developer with a love for creating innovative solutions
             </p>
-          </div>
+          </header>
 
           <div className="grid lg:grid-cols-2 gap-8 items-stretch">
             {/* Left Column - Profile */}
@@ -84,48 +84,48 @@ export default function About() {
                     Technical Skills
                   </h3>
                   <div className="space-y-4 flex-1">
-                    <div>
+                    <article>
                       <h4 className="text-base font-semibold text-white mb-3">
                         Programming Languages
                       </h4>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2" role="list" aria-label="Programming languages">
                         {skills.slice(0, 6).map((skill) => (
-                          <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
+                          <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}} role="listitem">
                             {skill}
                           </Badge>
                         ))}
                       </div>
-                    </div>
+                    </article>
                     
                     <Separator />
                     
-                    <div>
+                    <article>
                       <h4 className="text-base font-semibold text-white mb-3">
                         Technologies & Frameworks
                       </h4>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2" role="list" aria-label="Technologies and frameworks">
                         {skills.slice(6, 12).map((skill) => (
-                          <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
+                          <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}} role="listitem">
                             {skill}
                           </Badge>
                         ))}
                       </div>
-                    </div>
+                    </article>
                     
                     <Separator />
                     
-                    <div>
+                    <article>
                       <h4 className="text-base font-semibold text-white mb-3">
                         Tools & Soft Skills
                       </h4>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2" role="list" aria-label="Tools and soft skills">
                         {skills.slice(12).map((skill) => (
-                          <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
+                          <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}} role="listitem">
                             {skill}
                           </Badge>
                         ))}
                       </div>
-                    </div>
+                    </article>
                   </div>
                 </CardContent>
               </Card>

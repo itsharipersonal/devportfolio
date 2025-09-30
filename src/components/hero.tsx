@@ -4,11 +4,12 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-end bg-black">
+    <main className="relative min-h-screen flex items-end bg-black">
       {/* Unicorn.studio Interactive Background */}
       <div 
         className="absolute inset-0 z-0"
         aria-label="Unicorn.studio interactive background"
+        role="presentation"
       >
         <div 
           data-us-project="QsVP26DtfKdoFFb0vfgo" 
@@ -26,6 +27,12 @@ export default function Hero() {
               <br />
               <span className="text-[#420084]">FULL STACK DEVELOPER</span>
             </h1>
+            
+            {/* SEO-friendly description - Hidden from UI but visible to search engines */}
+            <p className="sr-only">
+              Senior Technology Associate & Full Stack Developer specializing in React, Next.js, Node.js, and cloud technologies. 
+              Building scalable web applications with 3+ years of experience and 50+ projects completed.
+            </p>
 
             {/* CTA Button */}
             {/* <div className="mt-8 sm:mt-12">
@@ -39,6 +46,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

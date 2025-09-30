@@ -45,18 +45,18 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-black">
+    <section id="contact" className="py-20 bg-black" aria-labelledby="contact-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <header className="text-center mb-16">
+            <h2 id="contact-heading" className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Get In Touch
             </h2>
             <p className="text-lg text-white max-w-3xl mx-auto">
               I'm always interested in new opportunities and exciting projects. Let's connect!
             </p>
-          </div>
+          </header>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:items-start">
             {/* Contact Information */}
@@ -129,7 +129,7 @@ export default function Contact() {
                   <CardTitle className="text-xl text-white">Send a Message</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-6">
+                  <form className="space-y-6" role="form" aria-label="Contact form">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="firstName" className="block text-xs font-medium text-white mb-2">

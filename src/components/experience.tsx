@@ -51,23 +51,23 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-black">
+    <section id="experience" className="py-20 bg-black" aria-labelledby="experience-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <header className="text-center mb-16">
+            <h2 id="experience-heading" className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Work Experience
             </h2>
             <p className="text-lg text-white max-w-3xl mx-auto">
               My professional journey and key achievements
             </p>
-          </div>
+          </header>
 
           {/* Experience Timeline */}
-          <div className="space-y-8">
+          <div className="space-y-8" role="list" aria-label="Work experience timeline">
             {experiences.map((exp, index) => (
-              <Card key={index} className="relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent before:pointer-events-none">
+              <Card key={index} className="relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent before:pointer-events-none" role="listitem">
                 <CardContent className="p-8 relative z-10">
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     {/* Timeline indicator */}
