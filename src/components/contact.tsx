@@ -211,7 +211,7 @@ export default function Contact() {
                   Let&apos;s discuss how I can help bring your ideas to life
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" variant="secondary" asChild>
+                  <Button size="lg" variant="secondary" className="bg-white text-black hover:bg-gray-100" asChild>
                     <a href="mailto:hk8031@gmail.com">
                       <Mail className="w-4 h-4 mr-2" />
                       Send Email
