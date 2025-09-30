@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-end">
+    <section className="relative min-h-screen flex items-end bg-black">
       {/* Unicorn.studio Interactive Background */}
       <div 
         className="absolute inset-0 z-0"

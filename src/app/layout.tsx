@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevPortfolio - Full Stack Developer",
+  title: "H.Space - Full Stack Developer",
   description: "Professional portfolio and services by Hari Krishnan, a full stack developer",
 };
 
