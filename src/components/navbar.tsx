@@ -3,14 +3,12 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import PDFViewer from "./pdf-viewer";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolledDown, setIsScrolledDown] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(null);
-  const [isResumePreviewOpen, setIsResumePreviewOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,11 +54,7 @@ export default function Navbar() {
   ];
 
   const handleResumeClick = () => {
-    setIsResumePreviewOpen(true);
-  };
-
-  const handleCloseResumePreview = () => {
-    setIsResumePreviewOpen(false);
+    window.open('/HARIKRISHNAN_DS.pdf', '_blank');
   };
 
   return (
@@ -149,7 +143,7 @@ export default function Navbar() {
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="w-full border-white text-white hover:bg-white/10"
+                      className="w-full border-white text-black hover:bg-white/10"
                       onClick={handleResumeClick}
                     >
                       Resume
@@ -164,14 +158,6 @@ export default function Navbar() {
           )}
         </div>
       </nav>
-
-      {/* PDF Viewer Component */}
-      <PDFViewer
-        isOpen={isResumePreviewOpen}
-        onClose={handleCloseResumePreview}
-        pdfUrl="/HARIKRISHNAN_DS.pdf"
-        title="Resume Preview"
-      />
     </>
   );
 }
