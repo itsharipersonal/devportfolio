@@ -60,8 +60,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-white">
-              DevPortfolio
+            <a href="#" className="flex items-center">
+              <img 
+                src="/h-logo.png" 
+                alt="H Logo" 
+                className="h-10 w-auto object-contain"
+              />
             </a>
           </div>
 
@@ -85,12 +89,12 @@ export default function Navbar() {
             <Button 
               variant="outline" 
               size="sm" 
-              className="border-white text-white hover:bg-white/10"
+              className="border-white text-black hover:bg-white/90"
               onClick={() => window.open('/HARIKRISHNAN_DS.pdf', '_blank')}
             >
               Resume
             </Button>
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-md hover:shadow-lg transition-all duration-200">
+            <Button size="sm" className="bg-[#420084] hover:bg-[#420084]/80 text-white font-semibold shadow-md hover:shadow-lg transition-all duration-200">
               Hire me
             </Button>
           </div>
