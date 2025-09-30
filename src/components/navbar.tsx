@@ -82,8 +82,13 @@ export default function Navbar() {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="border-white text-white hover:bg-white/10">
-              Login
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="border-white text-white hover:bg-white/10"
+              onClick={() => window.open('/HARIKRISHNAN_DS.pdf', '_blank')}
+            >
+              Resume
             </Button>
             <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-md hover:shadow-lg transition-all duration-200">
               Hire me
@@ -123,8 +128,13 @@ export default function Navbar() {
               ))}
               <div className="pt-4 pb-3 border-t border-white/20">
                 <div className="flex flex-col space-y-2">
-                  <Button variant="outline" size="sm" className="w-full border-white text-white hover:bg-white/10">
-                    Login
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full border-white text-white hover:bg-white/10"
+                    onClick={() => window.open('/HARIKRISHNAN_DS.pdf', '_blank')}
+                  >
+                    Resume
                   </Button>
                   <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-md hover:shadow-lg transition-all duration-200">
                     Hire me

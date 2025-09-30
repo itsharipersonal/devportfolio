@@ -8,75 +8,75 @@ import { Github, ExternalLink } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
+      title: "TrekTicket Microservices Platform",
+      description: "Architected a microservices-based ticketing platform using Node.js, Express, Next.js, TypeScript, Docker, and Kubernetes, handling 10,000+ transactions monthly.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-      github: "https://github.com/hari/ecommerce",
-      live: "https://ecommerce-demo.com",
+      technologies: ["Node.js", "Express", "Next.js", "TypeScript", "Docker", "Kubernetes", "NATS Streaming"],
+      github: "https://github.com/itsharipersonal/trekticket",
+      live: "https://trekticket-demo.com",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and project tracking capabilities.",
+      title: "TrekThread Social Media Application",
+      description: "Developed a Next.js 13-based social media platform with MongoDB, TailwindCSS, and Clerk for secure authentication, achieving 99.9% uptime.",
       image: "/api/placeholder/400/250",
-      technologies: ["Next.js", "TypeScript", "Socket.io", "MongoDB", "Tailwind"],
-      github: "https://github.com/hari/taskmanager",
-      live: "https://taskmanager-demo.com",
+      technologies: ["Next.js 13", "MongoDB", "TailwindCSS", "Clerk", "Server-side Rendering", "Zod Validation"],
+      github: "https://github.com/itsharipersonal/trekthread",
+      live: "https://trekthread-demo.com",
       featured: true
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard with location-based forecasts, interactive maps, and historical data visualization.",
+      title: "Log Gaming Marketplace",
+      description: "Built a secure gaming console marketplace using Node.js, Handlebars, CSS, and Bootstrap, with Razorpay for seamless payments.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "D3.js", "OpenWeather API", "Chart.js"],
-      github: "https://github.com/hari/weather-dashboard",
-      live: "https://weather-demo.com",
+      technologies: ["Node.js", "Handlebars", "CSS", "Bootstrap", "Razorpay", "Password Hashing"],
+      github: "https://github.com/itsharipersonal/log-gaming",
+      live: "https://loggaming-demo.com",
       featured: true
     },
     {
-      title: "Blog CMS",
-      description: "A headless CMS for content creators with markdown support, SEO optimization, and multi-author collaboration.",
+      title: "CENTA Event Platform",
+      description: "Developed dynamic, responsive web pages for high-profile events using Next.js, React.js, TailwindCSS, and Framer Motion, increasing user engagement by 25%.",
       image: "/api/placeholder/400/250",
-      technologies: ["Next.js", "Sanity", "Vercel", "MDX"],
-      github: "https://github.com/hari/blog-cms",
-      live: "https://blog-cms-demo.com",
+      technologies: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "SEO", "Accessibility"],
+      github: "https://github.com/itsharipersonal/centa-events",
+      live: "https://centa-events.com",
       featured: true
     },
     {
-      title: "Portfolio Website",
-      description: "A modern portfolio website built with Next.js and Tailwind CSS, featuring responsive design and smooth animations.",
+      title: "Library Management System",
+      description: "Academic project featuring a comprehensive library management system with user authentication, book tracking, and reporting capabilities.",
       image: "/api/placeholder/400/250",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-      github: "https://github.com/hari/portfolio",
-      live: "https://portfolio-demo.com",
+      technologies: ["C", "Object-Oriented Programming", "Data Structures", "File Management"],
+      github: "https://github.com/itsharipersonal/library-management",
+      live: "https://library-demo.com",
       featured: false
     },
     {
-      title: "Chat Application",
-      description: "Real-time chat application with user authentication, message history, and file sharing capabilities.",
+      title: "Real-time Chat Application",
+      description: "Academic project featuring a real-time chat application with multiple user support, message history, and secure communication.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "JWT"],
-      github: "https://github.com/hari/chat-app",
+      technologies: ["C", "Socket Programming", "Real-time Communication", "Multi-threading"],
+      github: "https://github.com/itsharipersonal/chat-app",
       live: "https://chat-demo.com",
       featured: false
     },
     {
-      title: "Recipe Finder",
-      description: "Recipe discovery app with search functionality, ingredient filtering, and nutritional information.",
+      title: "E-commerce Platform",
+      description: "Full-stack e-commerce solution with user authentication, payment processing, and admin dashboard using modern web technologies.",
       image: "/api/placeholder/400/250",
-      technologies: ["Vue.js", "Express", "MySQL", "Spoonacular API"],
-      github: "https://github.com/hari/recipe-finder",
-      live: "https://recipe-demo.com",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
+      github: "https://github.com/itsharipersonal/ecommerce",
+      live: "https://ecommerce-demo.com",
       featured: false
     },
     {
-      title: "Expense Tracker",
-      description: "Personal finance app for tracking expenses, budgeting, and generating spending reports.",
+      title: "Task Management App",
+      description: "Collaborative task management application with real-time updates, team collaboration features, and project tracking capabilities.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "PostgreSQL", "Chart.js", "JWT"],
-      github: "https://github.com/hari/expense-tracker",
-      live: "https://expense-demo.com",
+      technologies: ["Next.js", "TypeScript", "Socket.io", "MongoDB", "Tailwind"],
+      github: "https://github.com/itsharipersonal/taskmanager",
+      live: "https://taskmanager-demo.com",
       featured: false
     }
   ];
@@ -195,7 +195,7 @@ export default function Projects() {
           {/* View More Button */}
           <div className="text-center">
             <Button size="sm" variant="outline" asChild className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white border-0 shadow-md hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
-              <a href="https://github.com/hari" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/itsharipersonal" target="_blank" rel="noopener noreferrer">
                 View All Projects on GitHub
                 <Github className="w-4 h-4 ml-2" />
               </a>

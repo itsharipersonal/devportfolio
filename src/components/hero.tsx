@@ -22,9 +22,9 @@ export default function Hero() {
           <div className="max-w-4xl">
             {/* Main Headline - Lower left alignment with generous spacing */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white leading-tight">
-              HARI KRISHNAN
+              HARIKRISHNAN DS
               <br />
-              {/* <span className="text-blue-600">A FULL STACK DEV</span> */}
+              <span className="text-[#420084]">FULL STACK DEVELOPER</span>
             </h1>
 
             {/* CTA Button */}

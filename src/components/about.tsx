@@ -7,8 +7,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function About() {
   const skills = [
-    "React", "Next.js", "TypeScript", "Node.js", "Python", "PostgreSQL", 
-    "MongoDB", "AWS", "Docker", "Git", "Tailwind CSS", "GraphQL"
+    "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "SQL", "MongoDB",
+    "Node.js", "Express.js", "Next.js", "React.js", "TailwindCSS", "Bootstrap",
+    "Framer Motion", "Docker", "Kubernetes", "AWS (EC2, S3)", "Hasura", "GraphQL",
+    "Figma", "Adobe Photoshop", "Git", "Webpack", "Vercel", "Jira"
   ];
 
   return (
@@ -41,15 +43,16 @@ export default function About() {
                     </Avatar>
                     <div className="text-center sm:text-left flex-1">
                       <h3 className="text-xl font-bold text-white mb-2">
-                        Hari Krishnan
+                        Harikrishnan DS
                       </h3>
                       <p className="text-base font-semibold mb-3 text-white" >
-                        Full Stack Developer
+                        Senior Technology Associate & Full Stack Developer
                       </p>
                       <p className="text-white leading-relaxed">
-                        I'm a passionate developer with 5+ years of experience building 
-                        scalable web applications. I love turning complex problems into 
-                        simple, beautiful, and intuitive solutions.
+                        Passionate full-stack developer with expertise in modern web technologies. 
+                        I specialize in building scalable applications using React, Next.js, and cloud technologies. 
+                        Currently working as Senior Technology Associate at CENTA, with a strong foundation in 
+                        Computer Science and certifications in networking and cybersecurity.
                       </p>
                     </div>
                   </div>
@@ -60,7 +63,7 @@ export default function About() {
               <div className="grid grid-cols-2 gap-4">
                 <Card className="p-6 text-center bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl h-24 flex items-center justify-center relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/5 before:to-transparent before:pointer-events-none">
                   <CardContent className="p-0 relative z-10">
-                    <div className="text-2xl font-bold mb-1 text-white">5+</div>
+                    <div className="text-2xl font-bold mb-1 text-white">3+</div>
                     <div className="text-xs text-white">Years Experience</div>
                   </CardContent>
                 </Card>
@@ -83,10 +86,10 @@ export default function About() {
                   <div className="space-y-4 flex-1">
                     <div>
                       <h4 className="text-base font-semibold text-white mb-3">
-                        Frontend Development
+                        Programming Languages
                       </h4>
                       <div className="flex flex-wrap gap-2">
-                        {skills.slice(0, 4).map((skill) => (
+                        {skills.slice(0, 6).map((skill) => (
                           <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
                             {skill}
                           </Badge>
@@ -98,10 +101,10 @@ export default function About() {
                     
                     <div>
                       <h4 className="text-base font-semibold text-white mb-3">
-                        Backend Development
+                        Technologies & Frameworks
                       </h4>
                       <div className="flex flex-wrap gap-2">
-                        {skills.slice(4, 8).map((skill) => (
+                        {skills.slice(6, 12).map((skill) => (
                           <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
                             {skill}
                           </Badge>
@@ -113,10 +116,10 @@ export default function About() {
                     
                     <div>
                       <h4 className="text-base font-semibold text-white mb-3">
-                        DevOps & Tools
+                        Tools & Soft Skills
                       </h4>
                       <div className="flex flex-wrap gap-2">
-                        {skills.slice(8).map((skill) => (
+                        {skills.slice(12).map((skill) => (
                           <Badge key={skill} variant="secondary" className="px-3 py-1 text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
                             {skill}
                           </Badge>

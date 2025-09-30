@@ -12,19 +12,19 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "hari.krishnan@email.com",
-      href: "mailto:hari.krishnan@email.com"
+      value: "hk8031@gmail.com",
+      href: "mailto:hk8031@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 7592090926",
+      href: "tel:+917592090926"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Bangalore, India",
       href: "#"
     }
   ];
@@ -33,20 +33,14 @@ export default function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/hari",
+      href: "https://github.com/itsharipersonal",
       color: "hover:text-gray-900"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/hari",
+      href: "https://linkedin.com/in/harikrishnan2529",
       color: "hover:text-blue-600"
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/hari",
-      color: "hover:text-blue-400"
     }
   ];
 
@@ -219,13 +213,13 @@ export default function Contact() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" variant="secondary" asChild>
-                    <a href="mailto:hari.krishnan@email.com">
+                    <a href="mailto:hk8031@gmail.com">
                       <Mail className="w-4 h-4 mr-2" />
                       Send Email
                     </a>
                   </Button>
                   <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white" style={{'--hover-color': '#420084'} as React.CSSProperties} asChild>
-                    <a href="tel:+15551234567">
+                    <a href="tel:+917592090926">
                       <Phone className="w-4 h-4 mr-2" />
                       Call Now
                     </a>

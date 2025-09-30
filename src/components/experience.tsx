@@ -8,43 +8,45 @@ import { Calendar, MapPin, Building } from "lucide-react";
 export default function Experience() {
   const experiences = [
     {
-      company: "TechCorp Solutions",
-      position: "Senior Full Stack Developer",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
-      description: "Leading development of enterprise-scale web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.",
+      company: "Centre for Teacher Accreditation (CENTA) Pvt. Ltd.",
+      position: "Senior Technology Associate (Promoted from Associate, Technology and Data Analytics)",
+      location: "Bangalore, India",
+      duration: "Sep 2023 - Present",
+      description: "Promoted within 1 year for outstanding performance and leadership in technology initiatives. Developing dynamic, responsive web pages for high-profile events and redesigning company website to enhance user experience and engagement.",
       achievements: [
-        "Led a team of 5 developers in building a microservices architecture",
-        "Improved application performance by 40% through optimization",
-        "Implemented CI/CD pipelines reducing deployment time by 60%"
+        "Promoted within 1 year for outstanding performance and leadership in technology initiatives",
+        "Developed dynamic, responsive web pages for high-profile events using Next.js, React.js, TailwindCSS, and Framer Motion, increasing user engagement by 25%",
+        "Redesigned company website from Figma prototypes, enhancing UX/UI and reducing bounce rate by 15%",
+        "Performed rigorous manual testing on web and mobile applications, identifying and resolving over 100 critical bugs",
+        "Implemented SEO and accessibility improvements, boosting web traffic by 30% and improving customer retention"
       ],
-      technologies: ["React", "Node.js", "AWS", "Docker", "Kubernetes", "PostgreSQL"]
+      technologies: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "Figma", "SEO"]
     },
     {
-      company: "StartupXYZ",
-      position: "Full Stack Developer",
-      location: "Remote",
-      duration: "2020 - 2022",
-      description: "Developed and maintained multiple web applications from concept to deployment. Worked closely with product managers and designers to deliver user-centric solutions.",
+      company: "Brototype",
+      position: "Software Engineer Intern",
+      location: "Kochi, Kerala, India",
+      duration: "Sep 2022 - Aug 2023",
+      description: "Built scalable web applications and platforms using modern technologies including TypeScript, Next.js, Node.js, and cloud deployment solutions.",
       achievements: [
-        "Built a real-time chat application with 10,000+ daily active users",
-        "Developed RESTful APIs handling 1M+ requests per day",
-        "Implemented automated testing increasing code coverage to 90%"
+        "Built a scalable event ticket booking platform using TypeScript, Next.js, Node.js, and TailwindCSS, deployed with Docker and Kubernetes for high availability",
+        "Developed a social media application with Next.js and TypeScript, leveraging server-side rendering to reduce load times by 40%",
+        "Created a fully functional e-commerce platform using Handlebars, Bootstrap, and Node.js, integrating payment gateways and secure authentication"
       ],
-      technologies: ["Next.js", "TypeScript", "MongoDB", "Redis", "Socket.io", "Vercel"]
+      technologies: ["TypeScript", "Next.js", "Node.js", "TailwindCSS", "Docker", "Kubernetes", "Handlebars", "Bootstrap"]
     },
     {
-      company: "Digital Agency Pro",
-      position: "Frontend Developer",
-      location: "New York, NY",
-      duration: "2019 - 2020",
-      description: "Created responsive and interactive web experiences for various clients. Collaborated with design teams to implement pixel-perfect UI components.",
+      company: "Camping World",
+      position: "Sales Manager",
+      location: "Barka, Oman",
+      duration: "Sep 2020 - May 2023",
+      description: "Managed end-to-end sales operations and customer engagement strategies, achieving significant revenue growth and customer satisfaction improvements.",
       achievements: [
-        "Developed 20+ client websites with 100% mobile responsiveness",
-        "Reduced page load times by 50% through optimization",
-        "Implemented accessibility standards achieving WCAG 2.1 AA compliance"
+        "Managed end-to-end sales operations, achieving a 20% increase in monthly revenue through targeted customer engagement strategies",
+        "Learned Arabic to improve client communication, resulting in a 15% increase in customer satisfaction scores",
+        "Optimized inventory management by collaborating with purchasing teams, reducing stock discrepancies by 10%"
       ],
-      technologies: ["React", "Vue.js", "Sass", "Webpack", "Figma", "Jest"]
+      technologies: ["Sales Management", "Customer Relations", "Inventory Management", "Arabic Language"]
     }
   ];
 
@@ -69,31 +71,31 @@ export default function Experience() {
                 <CardContent className="p-8 relative z-10">
                   <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                     {/* Timeline indicator */}
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 lg:mt-1">
                       <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold" style={{backgroundColor: '#420084'}}>
                         {index + 1}
                       </div>
                     </div>
 
                     {/* Content */}
-                    <div className="flex-1 space-y-4">
+                    <div className="flex-1 space-y-5">
                       {/* Header */}
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <div>
-                          <h3 className="text-lg font-bold text-white">{exp.position}</h3>
-                          <div className="flex items-center gap-2 font-semibold text-white">
-                            <Building className="w-4 h-4" />
-                            {exp.company}
+                      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+                        <div className="flex-1">
+                          <h3 className="text-lg font-bold text-white leading-tight mb-2">{exp.position}</h3>
+                          <div className="flex items-center gap-2 font-semibold text-white mb-2">
+                            <Building className="w-4 h-4 flex-shrink-0" />
+                            <span className="text-sm">{exp.company}</span>
                           </div>
                         </div>
-                        <div className="flex flex-col sm:items-end gap-1 text-xs text-white">
+                        <div className="flex flex-col lg:items-end gap-2 text-xs text-white lg:min-w-[200px]">
                           <div className="flex items-center gap-1">
-                            <Calendar className="w-4 h-4" />
-                            {exp.duration}
+                            <Calendar className="w-4 h-4 flex-shrink-0" />
+                            <span>{exp.duration}</span>
                           </div>
                           <div className="flex items-center gap-1">
-                            <MapPin className="w-4 h-4" />
-                            {exp.location}
+                            <MapPin className="w-4 h-4 flex-shrink-0" />
+                            <span>{exp.location}</span>
                           </div>
                         </div>
                       </div>
@@ -107,12 +109,12 @@ export default function Experience() {
 
                       {/* Achievements */}
                       <div>
-                        <h4 className="font-semibold text-white mb-2">Key Achievements:</h4>
-                        <ul className="space-y-1">
+                        <h4 className="font-semibold text-white mb-3">Key Achievements:</h4>
+                        <ul className="space-y-2">
                           {exp.achievements.map((achievement, achIndex) => (
-                            <li key={achIndex} className="text-xs text-white flex items-start gap-2">
-                              <span className="mt-1 text-white">•</span>
-                              {achievement}
+                            <li key={achIndex} className="text-sm text-white flex items-start gap-3">
+                              <span className="mt-1.5 text-white text-xs">•</span>
+                              <span className="leading-relaxed">{achievement}</span>
                             </li>
                           ))}
                         </ul>
@@ -120,10 +122,10 @@ export default function Experience() {
 
                       {/* Technologies */}
                       <div>
-                        <h4 className="font-semibold text-white mb-2">Technologies Used:</h4>
+                        <h4 className="font-semibold text-white mb-3">Technologies Used:</h4>
                         <div className="flex flex-wrap gap-2">
                           {exp.technologies.map((tech) => (
-                            <Badge key={tech} variant="secondary" className="text-xs text-white" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
+                            <Badge key={tech} variant="secondary" className="text-xs text-white px-2 py-1" style={{backgroundColor: '#420084', borderColor: '#420084'}}>
                               {tech}
                             </Badge>
                           ))}
@@ -143,18 +145,18 @@ export default function Experience() {
             </h3>
             <Card className="bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:to-transparent before:pointer-events-none">
               <CardContent className="p-8 relative z-10">
-                <div className="flex items-center gap-6">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{backgroundColor: '#420084'}}>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#420084'}}>
                     <Building className="w-8 h-8 text-white" />
                   </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-white">
+                  <div className="flex-1">
+                    <h4 className="text-lg font-bold text-white mb-2">
                       Bachelor of Science in Computer Science
                     </h4>
-                    <p className="font-semibold text-white">University of Technology</p>
-                    <p className="text-white">2015 - 2019</p>
-                    <p className="text-xs text-white mt-1">
-                      Graduated Magna Cum Laude with focus on Software Engineering and Data Structures
+                    <p className="font-semibold text-white mb-1">PMSA PTM (Kerala University)</p>
+                    <p className="text-white mb-2">Aug 2016 - Jan 2020</p>
+                    <p className="text-sm text-white leading-relaxed">
+                      GPA: 3.8/4.0 | Kollam, Kerala, India | Mastered core concepts in C, Object-Oriented Programming, Data Structures, Operating Systems, and Linux
                     </p>
                   </div>
                 </div>
