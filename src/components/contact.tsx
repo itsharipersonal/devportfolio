@@ -4,8 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
 
 export default function Contact() {
   const contactInfo = [
@@ -54,7 +53,7 @@ export default function Contact() {
               Get In Touch
             </h2>
             <p className="text-lg text-white max-w-3xl mx-auto">
-              I'm always interested in new opportunities and exciting projects. Let's connect!
+              I&apos;m always interested in new opportunities and exciting projects. Let&apos;s connect!
             </p>
           </header>
 
@@ -209,7 +208,7 @@ export default function Contact() {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4">Ready to Start Your Project?</h3>
                 <p className="text-base mb-6 opacity-90">
-                  Let's discuss how I can help bring your ideas to life
+                  Let&apos;s discuss how I can help bring your ideas to life
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" variant="secondary" asChild>

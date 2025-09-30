@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import PDFViewer from "./pdf-viewer";
 
 export default function Navbar() {
@@ -72,9 +73,11 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <a href="#" className="flex items-center">
-                <img 
+                <Image 
                   src="/h-logo.png" 
                   alt="H Logo" 
+                  width={40}
+                  height={40}
                   className="h-10 w-auto object-contain"
                 />
               </a>

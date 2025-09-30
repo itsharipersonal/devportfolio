@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   const projects = [
@@ -103,9 +104,11 @@ export default function Projects() {
             {featuredProjects.map((project, index) => (
               <Card key={index} className="group overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-gray-700 hover:border-purple-500/50 shadow-lg hover:shadow-purple-500/20" role="listitem">
                 <div className="aspect-square bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
-                  <img 
+                  <Image 
                     src={project.image} 
                     alt={project.title}
+                    width={400}
+                    height={250}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-2">

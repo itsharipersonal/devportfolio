@@ -58,7 +58,7 @@ export default function PDFViewer({
                 <div className="text-center p-8">
                   <div className="text-4xl mb-4">📄</div>
                   <h3 className="text-lg font-semibold mb-2">PDF Preview Not Available</h3>
-                  <p className="text-sm mb-4">Your browser doesn't support PDF preview.</p>
+                  <p className="text-sm mb-4">Your browser doesn&apos;t support PDF preview.</p>
                   <div className="flex space-x-3">
                     <Button
                       variant="outline"
