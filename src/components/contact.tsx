@@ -57,9 +57,9 @@ export default function Contact() {
             </p>
           </header>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:items-start">
+          <div className="flex justify-center">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-8 w-full max-w-2xl">
               <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
                 <CardHeader>
                   <CardTitle className="text-xl text-white">Contact Information</CardTitle>
@@ -122,7 +122,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="lg:sticky lg:top-8">
+            <div className="hidden lg:sticky lg:top-8">
               <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl h-fit">
                 <CardHeader>
                   <CardTitle className="text-xl text-white">Send a Message</CardTitle>

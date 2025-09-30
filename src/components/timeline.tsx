@@ -273,15 +273,15 @@ export default function Timeline() {
           {/* Timeline */}
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-purple-600 to-purple-700"></div>
+            <div className="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-purple-600 to-purple-700"></div>
 
             {filteredTimelineItems.map((item, yearIndex) => (
               <div key={yearIndex} className="relative mb-16">
                 {/* Year Marker */}
-                <div className="absolute left-6 w-4 h-4 bg-purple-600 rounded-full border-4 border-black z-10"></div>
+                <div className="hidden md:block absolute left-6 w-4 h-4 bg-purple-600 rounded-full border-4 border-black z-10"></div>
                 
                 {/* Year Label */}
-                <div className="ml-20 mb-6">
+                <div className="ml-0 md:ml-20 mb-6">
                   <div className="flex items-center gap-3 mb-4">
                     <Calendar className="w-5 h-5 text-purple-400" />
                     <span className="text-2xl font-bold text-purple-400">{item.year}</span>
@@ -291,7 +291,7 @@ export default function Timeline() {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="ml-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="ml-0 md:ml-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                   {item.projects.map((project, projectIndex) => (
                     <Card key={projectIndex} className="group overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border border-gray-700 hover:border-purple-500/50 shadow-lg hover:shadow-purple-500/20 min-h-80 hover:min-h-96 flex flex-col">
                       <CardHeader className="pb-2">
