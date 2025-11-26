@@ -4,18 +4,6 @@
 export default function Hero() {
   return (
     <main className="relative min-h-screen flex items-end bg-black">
-      {/* Unicorn.studio Interactive Background */}
-      <div 
-        className="absolute inset-0 z-0"
-        aria-label="Unicorn.studio interactive background"
-        role="presentation"
-      >
-        <div 
-          data-us-project="QsVP26DtfKdoFFb0vfgo" 
-          style={{width: "100%", height: "100%"}}
-        ></div>
-      </div>
-
       {/* Hero Content - Positioned at lower left with generous white space */}
       <div className="relative z-10 w-full h-full flex items-end">
         <div className="w-full px-8 sm:px-12 lg:px-16 xl:px-20 pb-16 sm:pb-20 lg:pb-24">
