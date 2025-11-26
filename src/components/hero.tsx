@@ -3,7 +3,7 @@
 
 export default function Hero() {
   return (
-    <main className="relative min-h-screen flex items-end bg-black">
+    <main className="relative min-h-screen flex items-end bg-transparent">
       {/* Hero Content - Positioned at lower left with generous white space */}
       <div className="relative z-10 w-full h-full flex items-end">
         <div className="w-full px-8 sm:px-12 lg:px-16 xl:px-20 pb-16 sm:pb-20 lg:pb-24">

@@ -51,7 +51,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-black" aria-labelledby="experience-heading">
+    <section id="experience" className="py-20 bg-transparent" aria-labelledby="experience-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}

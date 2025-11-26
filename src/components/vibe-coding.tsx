@@ -41,7 +41,7 @@ export default function VibeCoding() {
 
 
   return (
-    <section id="vibe-coding" className="py-20 bg-gradient-to-br from-gray-900 to-black" aria-labelledby="vibe-coding-heading">
+    <section id="vibe-coding" className="py-20 bg-transparent" aria-labelledby="vibe-coding-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
